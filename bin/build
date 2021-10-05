@@ -1,0 +1,3 @@
+ #!/usr/bin/env bash
+
+python -m jupyter nbconvert --execute --to slides notebooks/*.ipynb --output-dir slides
