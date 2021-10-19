@@ -7,3 +7,4 @@
 - [Class 3](https://beatrizfrocha.github.io/python-introduction/class3.slides.html)
 - [Class 4](https://beatrizfrocha.github.io/python-introduction/class4.slides.ht
 ml)
+- [Class 5](https://beatrizfrocha.github.io/python-introduction/class5.slides.html)
