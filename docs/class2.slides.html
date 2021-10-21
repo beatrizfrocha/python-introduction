@@ -15151,10 +15151,15 @@ a
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">youngest_child</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span> <span class="c1">#número indefinido de argumentos</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The youngest child is </span><span class="si">{</span><span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">children_names</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span> <span class="c1">#número indefinido de argumentos</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are no children!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The children names are:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     
-<span class="n">youngest_child</span><span class="p">(</span><span class="s2">&quot;Maria&quot;</span><span class="p">,</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="s2">&quot;Frank&quot;</span><span class="p">)</span>
+<span class="n">children_names</span><span class="p">(</span><span class="s2">&quot;Maria&quot;</span><span class="p">,</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span> <span class="s2">&quot;Frank&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15174,7 +15179,10 @@ a
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The youngest child is John.
+<pre>The children names are:
+- Maria
+- John
+- Frank
 </pre>
 </div>
 </div>
@@ -15190,7 +15198,8 @@ a
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_age</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span> <span class="c1">#número indefinido de argumentos com nome</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;He is </span><span class="si">{</span><span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> years old.&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     
 <span class="n">get_age</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Peter&quot;</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="s2">&quot;30&quot;</span><span class="p">)</span>
 </pre></div>
@@ -15212,7 +15221,8 @@ a
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>He is 30 years old.
+<pre>name: Peter
+age: 30
 </pre>
 </div>
 </div>
