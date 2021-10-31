@@ -74,6 +74,8 @@ def fizzbuzz():
 
 #10
 
+import math
+
 def check_velocity(speed):
     points = (speed-70)/5
     if speed < 70:
@@ -81,4 +83,4 @@ def check_velocity(speed):
     elif points > 12:
         print("carta de condução suspensa")
     else:
-        print(points)
+        print(math.floor(points))
