@@ -1,3 +1,14 @@
  #!/usr/bin/env bash
 
+touch notebooks/temp.txt
+rm notebooks/new_file.txt
+echo "Hello world!
+Welcome to Python introduction course.
+This is class number 4.
+Stay focused!" > notebooks/example.txt
+
 python -m jupyter nbconvert --execute --to slides notebooks/*.ipynb --output-dir docs
+
+cd notebooks
+python -m jupyter nbconvert --to pdf *.ipynb --output-dir ../docs
+cd ..
