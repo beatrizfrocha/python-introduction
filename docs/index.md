@@ -3,7 +3,7 @@
 ## Slides
 
 - [Class 1](https://beatrizfrocha.github.io/python-introduction/class1.slides.html)
-- [Class 2](https://beatrizfrocha.github.io/python-introduction/class2.slides.htmli) ([solutions](https://github.com/beatrizfrocha/python-introduction/blob/main/
+- [Class 2](https://beatrizfrocha.github.io/python-introduction/class2.slides.html) ([solutions](https://github.com/beatrizfrocha/python-introduction/blob/main/
 solutions/solutions_class2.py))
 - [Class 3](https://beatrizfrocha.github.io/python-introduction/class3.slides.html) ([solutions](https://github.com/beatrizfrocha/python-introduction/blob/main/
 solutions/solutions_class3.py))
