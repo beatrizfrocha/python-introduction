@@ -1,14 +1,14 @@
-#1
+#1 fizemos este
 
 def first_last(lst):
     return lst[0], lst[-1]
 
-#2
+#2 fizemos este
 
 def disconnection(s1, s2):
     return s1 - s2
 
-#3
+#3 fizemos este
 
 def max(lst):
     max_elem = 0
@@ -17,7 +17,7 @@ def max(lst):
             max_elem = i
     return max_elem
 
-#4
+#4 fizemos este
 
 import math
 
@@ -37,7 +37,7 @@ def sum_multiples(limit):
             
     return result
 
-#6
+#6 fizemos este
 
 def filter_height_weight(d, h, w):
     result = {}
@@ -47,12 +47,12 @@ def filter_height_weight(d, h, w):
             
     return result
 
-#7
+#7 fizemos este
 
 def pairs(limit):
     return [(x, y) for x in range(limit+1) for y in range(limit+1)]
 
-#8
+#8 fizemos este
 
 def sum_list_tuple(it):
     result = 0
@@ -68,14 +68,14 @@ def sum_tuples_in_list(l):
         
     return result
 
-#9
+#9 fizemos este
 
 def least(l, n):
     l.sort()
     
     return l[:n]
 
-#10
+#10 fizemos este
 
 def max_sublist(l):
     sum = 0

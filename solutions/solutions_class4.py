@@ -1,28 +1,26 @@
-#1
+#1 fizemos este
 
 def calculator():
     operation = input("What operation would you like to perform? (add/subtract/divide/multiply) ")
     number1 = input("Insert the first number ")
     number2 = input("Insert the second number ")
     if operation == "add":
-        result = float(number1) + float(number2)
+        return float(number1) + float(number2)
     elif operation == "subtract":
-        result = float(number1) - float(number2)
+        return float(number1) - float(number2)
     elif operation == "divide":
-        result = float(number1) / float(number2)
+        return float(number1) / float(number2)
     else:
-        result = float(number1) * float(number2)
-        
-    return result
+        return float(number1) * float(number2)
 
-#2
+#2 fizemos este
 
 def rewrite(filename):
     if os.path.exists(filename):
         with open(filename, "r") as f:
             result = f.readlines()
             
-        with open("new_file.txt", "w") as f:
+        with open("new_file.txt", "a") as f:
             for idx, line in enumerate(result):
                 if idx == 4:
                     continue
@@ -30,7 +28,7 @@ def rewrite(filename):
     else:
         print(f"{filename} does not exist.")
 
-#3
+#3 fizemos este
 
 def count_words():
     file = input("Insira o caminho do ficheiro pretendido ")
@@ -43,32 +41,32 @@ def count_words():
 
     return result
 
-#4
+#4 fizemos este
 
 def bigger_than_n(l, n):
     return list(filter(lambda x: len(x)>n, l))
 
-#5
+#5 fizemos este
 
 def abs_value(l):
     return list(map(abs, l))
 
-#6
+#6 fizemos este
 
 def min(l):
     return reduce(lambda x, y: x if x < y else y,l)
 
-#7
+#7 fizemos este
 
 def harmonic_sum(n):
     return reduce(lambda x, y: x + 1/y, range(1,n))
 
-#8
+#8 fizemos este
 
 def sum_3_lists(l1,l2,l3):
     return list(map(lambda x, y, z: x+y+z,l1,l2,l3))
 
-#9
+#9 fizemos este
 
 def freq_word():
     word = input("Insert the word ")
@@ -82,7 +80,7 @@ def freq_word():
 
     return result
 
-#10
+#10 fizemos este
 
 def filter_positives(l):
     return list(filter(lambda x: x>0, l))
